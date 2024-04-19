@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
 *{
-  margin:0;
+  margin:1px;
   padding:0;
   box-sizing:border-box;
   scroll-behavior:smooth;
@@ -236,6 +236,8 @@ profile-photo .img{
   max-width: 100%;  
 }
 .education-content .row .timeline{
+  /* margin-left: 4px;
+  margin-right: 4px; */
   padding: 30px 15px;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
