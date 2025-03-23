@@ -11,7 +11,7 @@ a{
   color:#fff;
   transition:0.3s; 
 }
-ul{
+ul{ 
   list-style:none;
 }
 img{
@@ -208,16 +208,32 @@ profile-photo .img{
 .btn.active{
   border-color: #fed700;
 }
-.education-content .row{
+.education-content .row {
+  display: flex;
+  flex-direction: column; /* Stack Education and Skills vertically */
+  border-radius: 5px;
+  height: auto; /* Allow content to adjust dynamically */
+  margin-bottom: 10px; /* Reduce excess bottom margin */
+  gap: 3rem; /* Add spacing between Education and Skills */
+}
+
+.education-content .title{
+  color: #fed700;
+}
+.education-content .row .education,
+.education-content .row .internship {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  color: #e5e5e5;
+}
+/* .education-content .row{
   display: flex;
   border-radius: 5px;
   height: 400px;
   margin-bottom: 250px;
 }
 
-.education-content .title{
-  color: #fed700;
-}
 .education-content .row .education,
 .education-content .row .internship
 {
@@ -225,7 +241,7 @@ profile-photo .img{
   flex:0 0 50%;
   max-width: 50%;
   margin-top: 30px;
-} 
+}  */
 .education-content  h3.title{
   font-size:24px;
   margin-bottom: 30px;
